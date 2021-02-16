@@ -68,7 +68,7 @@
 			 </div>
 
 <div class="row">
-               	<div class="col-xs-12 col-md-12 col-lg-6">
+
 
 <div class="au-form-group">
 <h2>Payment items</h2>
@@ -76,29 +76,39 @@
 
 
 
-<div class="au-form-group radio-selection">
-                 <fieldset class="au-fieldset">
-                     <legend class="au-fieldset__legend">
-                         <h3 class="au-display-sm">Please select a payment item</h3>
-                        
-                     </legend>
+<div class="au-form-group">
+<div class="au-table__wrapper">
+<table class="au-table au-table--striped">
+    <caption class="au-table__caption">Please select a payment item</caption>
+    <thead class="au-table__head">
+        <tr class="au-table__row">
+            <th scope="col" class="au-table__header">Description</th>
+            <th scope="col" class="au-table__header">Case number</th>
+            <th scope="col" class="au-table__header">Fee code</th>
+            <th scope="col" class="au-table__header">Payment due</th>
+            <th scope="col" class="au-table__header">Fee</th>
+		</tr>
+    </thead>
+    <tbody class="au-table__body">
+        <tr class="au-table__row">
+            <td class="au-table__cell"><a href="additional-payment-summary.html">Notification of a firework display</a></td>
+            <td class="au-table__cell">0123</td>
+            <td class="au-table__cell">1.1</td>
+            <td class="au-table__cell">01/06/2021</td>
+            <td class="au-table__cell">$240</td>
+		</tr>
+        <tr class="au-table__row">
+            <td class="au-table__cell"><a href="#">Notification of a firework display</a></td>
+            <td class="au-table__cell">0556</td>
+            <td class="au-table__cell">1.1</td>
+            <td class="au-table__cell">01/08/2021</td>
+            <td class="au-table__cell">$240</td>
+		</tr>
+    </tbody>
+</table>
+</div>
+</div>
 
-                     <div class="au-control-input au-control-input--block">
-   <input class="au-control-input__input" type="radio" name="radio-ex1" id="maat-yes">
-   <label class="au-control-input__text" for="maat-yes">	Notification of a firework display<br>Case number: 0123<br> Payment due: 01/06/2021<br> Fee: $240</label>
- </div>
- <div class="au-control-input au-control-input--block">
-   <input class="au-control-input__input" type="radio" name="radio-ex1" id="maat-no" >
-   <label class="au-control-input__text" for="maat-no">Notification of a firework display<br>Case number: 0556<br> Payment due: 01/07/2021<br> Fee: $240</label>
- </div>
-                     <!-- <div class="au-control-input au-control-input--block">
-   <input class="au-control-input__input" type="radio" name="radio-ex1" id="maat-no" >
-   <label class="au-control-input__text" for="maat-no">Application C - $180</label>
- </div>-->
-
-
-                 </fieldset>
-                 </div>
 
 
 
@@ -109,8 +119,7 @@
 
 
 
-
-				<div class="au-form-group">
+				<!--<div class="au-form-group">
 
 				<a class="au-btn" href="additional-payment-summary.html">Next</a>
 
@@ -120,10 +129,10 @@
 
 
 
-				</div>
+				</div>-->
 				               
 
-            </div>
+
 			 </div>
 			 </div>
 		  </div>
