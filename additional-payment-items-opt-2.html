@@ -67,16 +67,19 @@
                </header>
 			 </div>
 
-             <div class="au-form-group">
-             <div class="au-callout">
-                        <p>If there is an issue with this payment item please <a href="#">Contact CASA</a></p>
-                     </div>
-             </div>
-             
+<div class="row">
+
+
+<div class="au-form-group">
+<h2>Payment items</h2>
+                    </div>    
+
+
+
 <div class="au-form-group">
 <div class="au-table__wrapper">
 <table class="au-table au-table--striped">
-    <caption class="au-table__caption">Summary</caption>
+    <caption class="au-table__caption">Please select a payment item</caption>
     <thead class="au-table__head">
         <tr class="au-table__row">
             <th scope="col" class="au-table__header">Description</th>
@@ -84,18 +87,22 @@
             <th scope="col" class="au-table__header">Fee code</th>
             <th scope="col" class="au-table__header">Payment due</th>
             <th scope="col" class="au-table__header">Fee</th>
-            
-            <th scope="col" class="au-table__header"></th>
 		</tr>
     </thead>
     <tbody class="au-table__body">
         <tr class="au-table__row">
-            <td class="au-table__cell">Notification of a firework display</td>
+            <td class="au-table__cell"><a href="additional-payment-summary.html">Notification of a firework display</a></td>
             <td class="au-table__cell">0123</td>
             <td class="au-table__cell">1.1</td>
             <td class="au-table__cell">01/06/2021</td>
             <td class="au-table__cell">$240</td>
-            <td class="au-table__cell"><a href="additional-payment-summary-cancel-modal.html">Cancel</a></td>
+		</tr>
+        <tr class="au-table__row">
+            <td class="au-table__cell"><a href="#">Notification of a firework display</a></td>
+            <td class="au-table__cell">0556</td>
+            <td class="au-table__cell">1.1</td>
+            <td class="au-table__cell">01/08/2021</td>
+            <td class="au-table__cell">$240</td>
 		</tr>
     </tbody>
 </table>
@@ -103,41 +110,34 @@
 </div>
 
 
-<!--div class="casa-section">
-<h3>Declaration</h3>
-<div class="au-callout">
-<div class="row">
-<div class="col-xs-12 col-lg-9">
-<label class="au-control-input">
-<input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="declaration">
-<span class="au-control-input__text form-text p-t-0">
-		All statements in this Declaration must be correct. Making a false or misleading statement to CASA is an offence.</span>
-</label>
-</div>
-</div>
-</div>
-</div-->
-
-
-<div class="au-form-group"></div>
-				<div class="form-navigation">
-
-				<a class="au-btn" href="additional-payment.html">Proceed to payment</a><br><br>
-                    
-                    <p>You will be directed to Westpac for payment</p>
 
 
 
 
 
 
-            </div>
-             </div>
 
 
 
-            </div>
-         </div>
+				<!--<div class="au-form-group">
+
+				<a class="au-btn" href="additional-payment-summary.html">Next</a>
+
+
+
+
+
+
+
+				</div>-->
+				               
+
+
+			 </div>
+			 </div>
+		  </div>
+
+
           <div class="footer">
 
             <div class="footer-wrapper">
@@ -145,5 +145,17 @@
             </div>
          </div>
       </main>
+	   		  <script>
+		  $("input[name=assessed-simulator]").on("change", function () {
+        if ($(this).val() === "aircraft") {
+            $(".vh-mark").removeClass("casa-hidden");
+            $(".simulator").addClass("casa-hidden");
+        } else if ($(this).val() === "simulator") {
+            $(".vh-mark").addClass("casa-hidden");
+            $(".simulator").removeClass("casa-hidden");
+        }
+    });
+
+		  </script>
    </body>
 </html>
